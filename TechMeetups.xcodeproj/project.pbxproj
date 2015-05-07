@@ -14,6 +14,7 @@
 		BC838AB21AFC29BA000C32FF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC838AB11AFC29BA000C32FF /* Images.xcassets */; };
 		BC838AB51AFC29BA000C32FF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC838AB31AFC29BA000C32FF /* LaunchScreen.xib */; };
 		BC838AC11AFC29BA000C32FF /* TechMeetupsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BC838AC01AFC29BA000C32FF /* TechMeetupsTests.m */; };
+		BC838ACC1AFC2BCF000C32FF /* TNDMeetupAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = BC838ACB1AFC2BCF000C32FF /* TNDMeetupAPIClient.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		BC838ABA1AFC29BA000C32FF /* TechMeetupsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TechMeetupsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC838ABF1AFC29BA000C32FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC838AC01AFC29BA000C32FF /* TechMeetupsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TechMeetupsTests.m; sourceTree = "<group>"; };
+		BC838ACA1AFC2BCF000C32FF /* TNDMeetupAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNDMeetupAPIClient.h; sourceTree = "<group>"; };
+		BC838ACB1AFC2BCF000C32FF /* TNDMeetupAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNDMeetupAPIClient.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,8 @@
 				BC838AA91AFC29BA000C32FF /* AppDelegate.m */,
 				BC838AAB1AFC29BA000C32FF /* ViewController.h */,
 				BC838AAC1AFC29BA000C32FF /* ViewController.m */,
+				BC838ACA1AFC2BCF000C32FF /* TNDMeetupAPIClient.h */,
+				BC838ACB1AFC2BCF000C32FF /* TNDMeetupAPIClient.m */,
 				BC838AAE1AFC29BA000C32FF /* Main.storyboard */,
 				BC838AB11AFC29BA000C32FF /* Images.xcassets */,
 				BC838AB31AFC29BA000C32FF /* LaunchScreen.xib */,
@@ -221,6 +226,7 @@
 			files = (
 				BC838AAD1AFC29BA000C32FF /* ViewController.m in Sources */,
 				BC838AAA1AFC29BA000C32FF /* AppDelegate.m in Sources */,
+				BC838ACC1AFC2BCF000C32FF /* TNDMeetupAPIClient.m in Sources */,
 				BC838AA71AFC29BA000C32FF /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
