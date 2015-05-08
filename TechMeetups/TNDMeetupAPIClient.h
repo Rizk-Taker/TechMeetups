@@ -10,10 +10,11 @@
 
 @interface TNDMeetupAPIClient : NSObject
 
-+ (instancetype)sharedProxy;
++ (instancetype)sharedInstance;
 
-- (void)displayMeetupEventsForTopic: (NSString *)topic
-                           Latitude: (NSString *)lat
-                          Longitude: (NSString *)lon;
+- (void)displayMeetupEventsForTopic:(NSString *)topic
+                           Latitude:(NSString *)lat
+                          Longitude:(NSString *)lon
+                    CompletionBlock:(void (^)(NSArray *meetUpEvents))completionBlock;
 
 @end
