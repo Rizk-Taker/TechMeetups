@@ -3,6 +3,8 @@
 
 target 'TechMeetups' do
     pod "AFNetworking", "~> 2.0"
+    pod 'MBProgressHUD', '~> 0.9.1'
+    pod 'INTULocationManager'
 end
 
 target 'TechMeetupsTests' do

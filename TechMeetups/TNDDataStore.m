@@ -24,13 +24,15 @@
 
 - (void) getMeetUpsAroundUserLocationWithLatitude: (NSString *)lat
                                      andLongitude: (NSString *)lon
-                                         ForTopic: (NSString *)topic {
+                                         ForTopic: (NSString *)topic
+                                  CompletionBlock:(void (^)())completionBlock {
     
     [[TNDMeetupAPIClient sharedInstance] displayMeetupEventsForTopic:topic
                                                             Latitude:lat
                                                            Longitude:lon CompletionBlock:^(NSArray *meetUpEvents) {
                                                                
                                                                self.meetUps = [NSMutableArray arrayWithArray:meetUpEvents];
+                                                               completionBlock();
                                                            }];
     
 }

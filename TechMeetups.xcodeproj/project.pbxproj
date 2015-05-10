@@ -11,8 +11,6 @@
 		BC838AA71AFC29BA000C32FF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BC838AA61AFC29BA000C32FF /* main.m */; };
 		BC838AAA1AFC29BA000C32FF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BC838AA91AFC29BA000C32FF /* AppDelegate.m */; };
 		BC838AB01AFC29BA000C32FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC838AAE1AFC29BA000C32FF /* Main.storyboard */; };
-		BC838AB21AFC29BA000C32FF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC838AB11AFC29BA000C32FF /* Images.xcassets */; };
-		BC838AB51AFC29BA000C32FF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC838AB31AFC29BA000C32FF /* LaunchScreen.xib */; };
 		BC838AC11AFC29BA000C32FF /* TechMeetupsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BC838AC01AFC29BA000C32FF /* TechMeetupsTests.m */; };
 		BC838ACC1AFC2BCF000C32FF /* TNDMeetupAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = BC838ACB1AFC2BCF000C32FF /* TNDMeetupAPIClient.m */; };
 		BC838ACF1AFC35AF000C32FF /* TNDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC838ACE1AFC35AF000C32FF /* TNDViewController.m */; };
@@ -20,6 +18,16 @@
 		BC838AD71AFC461C000C32FF /* TNDMeetup.m in Sources */ = {isa = PBXBuildFile; fileRef = BC838AD61AFC461C000C32FF /* TNDMeetup.m */; };
 		BC838ADA1AFCD775000C32FF /* TNDAddressHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = BC838AD91AFCD775000C32FF /* TNDAddressHelper.m */; };
 		BC838ADD1AFCE322000C32FF /* TNDDataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = BC838ADC1AFCE322000C32FF /* TNDDataStore.m */; };
+		BC8AC1F21AFE554D00087AF6 /* TNDDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC8AC1F11AFE554D00087AF6 /* TNDDetailViewController.m */; };
+		BC8AC2041AFEBBC800087AF6 /* meetupLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = BC8AC2031AFEBBC800087AF6 /* meetupLogo.png */; };
+		BC8AC2081AFEC1BC00087AF6 /* Launchscreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC8AC2071AFEC1BC00087AF6 /* Launchscreen.storyboard */; };
+		BC8AC20B1AFEC78B00087AF6 /* TNDWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC8AC20A1AFEC78B00087AF6 /* TNDWebViewController.m */; };
+		BC8AC20E1AFECC0A00087AF6 /* TNDMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC8AC20D1AFECC0A00087AF6 /* TNDMapViewController.m */; };
+		BC8AC2101AFECD4B00087AF6 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC8AC20F1AFECD4B00087AF6 /* MapKit.framework */; };
+		BC8AC21A1AFEDD0700087AF6 /* redBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = BC8AC2191AFEDD0700087AF6 /* redBackground.png */; };
+		BC8AC21E1AFEE0AE00087AF6 /* redDetailBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = BC8AC21D1AFEE0AE00087AF6 /* redDetailBackground.png */; };
+		BC8AC2241AFEE75D00087AF6 /* TNDDateHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = BC8AC2231AFEE75D00087AF6 /* TNDDateHelper.m */; };
+		BC8AC2281AFEE98900087AF6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC8AC2271AFEE98900087AF6 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,8 +49,6 @@
 		BC838AA81AFC29BA000C32FF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BC838AA91AFC29BA000C32FF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		BC838AAF1AFC29BA000C32FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		BC838AB11AFC29BA000C32FF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		BC838AB41AFC29BA000C32FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		BC838ABA1AFC29BA000C32FF /* TechMeetupsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TechMeetupsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC838ABF1AFC29BA000C32FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC838AC01AFC29BA000C32FF /* TechMeetupsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TechMeetupsTests.m; sourceTree = "<group>"; };
@@ -57,6 +63,20 @@
 		BC838AD91AFCD775000C32FF /* TNDAddressHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNDAddressHelper.m; sourceTree = "<group>"; };
 		BC838ADB1AFCE322000C32FF /* TNDDataStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNDDataStore.h; sourceTree = "<group>"; };
 		BC838ADC1AFCE322000C32FF /* TNDDataStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNDDataStore.m; sourceTree = "<group>"; };
+		BC8AC1F01AFE554D00087AF6 /* TNDDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNDDetailViewController.h; sourceTree = "<group>"; };
+		BC8AC1F11AFE554D00087AF6 /* TNDDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNDDetailViewController.m; sourceTree = "<group>"; };
+		BC8AC2031AFEBBC800087AF6 /* meetupLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = meetupLogo.png; sourceTree = "<group>"; };
+		BC8AC2071AFEC1BC00087AF6 /* Launchscreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Launchscreen.storyboard; sourceTree = "<group>"; };
+		BC8AC2091AFEC78B00087AF6 /* TNDWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNDWebViewController.h; sourceTree = "<group>"; };
+		BC8AC20A1AFEC78B00087AF6 /* TNDWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNDWebViewController.m; sourceTree = "<group>"; };
+		BC8AC20C1AFECC0A00087AF6 /* TNDMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNDMapViewController.h; sourceTree = "<group>"; };
+		BC8AC20D1AFECC0A00087AF6 /* TNDMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNDMapViewController.m; sourceTree = "<group>"; };
+		BC8AC20F1AFECD4B00087AF6 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		BC8AC2191AFEDD0700087AF6 /* redBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redBackground.png; sourceTree = "<group>"; };
+		BC8AC21D1AFEE0AE00087AF6 /* redDetailBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redDetailBackground.png; sourceTree = "<group>"; };
+		BC8AC2221AFEE75D00087AF6 /* TNDDateHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNDDateHelper.h; sourceTree = "<group>"; };
+		BC8AC2231AFEE75D00087AF6 /* TNDDateHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNDDateHelper.m; sourceTree = "<group>"; };
+		BC8AC2271AFEE98900087AF6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ../Images.xcassets; sourceTree = "<group>"; };
 		C6215E19B9D121B9B7C38340 /* Pods-TechMeetups.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechMeetups.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TechMeetups/Pods-TechMeetups.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -65,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC8AC2101AFECD4B00087AF6 /* MapKit.framework in Frameworks */,
 				BC838AD11AFC3663000C32FF /* CoreLocation.framework in Frameworks */,
 				7EF881D932273F640A2E3578 /* libPods-TechMeetups.a in Frameworks */,
 			);
@@ -83,6 +104,7 @@
 		2CAC91ECEB844F62BED95266 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BC8AC20F1AFECD4B00087AF6 /* MapKit.framework */,
 				BC838AD01AFC3663000C32FF /* CoreLocation.framework */,
 				5420D8F00F5DCC0080F8BCA3 /* libPods-TechMeetups.a */,
 			);
@@ -121,21 +143,9 @@
 		BC838AA31AFC29BA000C32FF /* TechMeetups */ = {
 			isa = PBXGroup;
 			children = (
-				BC838AA81AFC29BA000C32FF /* AppDelegate.h */,
-				BC838AA91AFC29BA000C32FF /* AppDelegate.m */,
-				BC838AD51AFC461C000C32FF /* TNDMeetup.h */,
-				BC838AD61AFC461C000C32FF /* TNDMeetup.m */,
-				BC838ACA1AFC2BCF000C32FF /* TNDMeetupAPIClient.h */,
-				BC838ACB1AFC2BCF000C32FF /* TNDMeetupAPIClient.m */,
-				BC838ADB1AFCE322000C32FF /* TNDDataStore.h */,
-				BC838ADC1AFCE322000C32FF /* TNDDataStore.m */,
-				BC838AD81AFCD775000C32FF /* TNDAddressHelper.h */,
-				BC838AD91AFCD775000C32FF /* TNDAddressHelper.m */,
-				BC838ACD1AFC35AF000C32FF /* TNDViewController.h */,
-				BC838ACE1AFC35AF000C32FF /* TNDViewController.m */,
-				BC838AAE1AFC29BA000C32FF /* Main.storyboard */,
-				BC838AB11AFC29BA000C32FF /* Images.xcassets */,
-				BC838AB31AFC29BA000C32FF /* LaunchScreen.xib */,
+				BC8AC2261AFEE8DA00087AF6 /* Models */,
+				BC8AC2211AFEE73A00087AF6 /* Controllers */,
+				BC8AC2201AFEE73000087AF6 /* Views */,
 				BC838AA41AFC29BA000C32FF /* Supporting Files */,
 			);
 			path = TechMeetups;
@@ -144,6 +154,7 @@
 		BC838AA41AFC29BA000C32FF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				BC8AC2271AFEE98900087AF6 /* Images.xcassets */,
 				BC838AA51AFC29BA000C32FF /* Info.plist */,
 				BC838AA61AFC29BA000C32FF /* main.m */,
 			);
@@ -165,6 +176,68 @@
 				BC838ABF1AFC29BA000C32FF /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BC8AC21F1AFEE71700087AF6 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				BC8AC2031AFEBBC800087AF6 /* meetupLogo.png */,
+				BC8AC2191AFEDD0700087AF6 /* redBackground.png */,
+				BC8AC21D1AFEE0AE00087AF6 /* redDetailBackground.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		BC8AC2201AFEE73000087AF6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BC838AAE1AFC29BA000C32FF /* Main.storyboard */,
+				BC8AC2071AFEC1BC00087AF6 /* Launchscreen.storyboard */,
+				BC8AC21F1AFEE71700087AF6 /* Images */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		BC8AC2211AFEE73A00087AF6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BC838ACD1AFC35AF000C32FF /* TNDViewController.h */,
+				BC838ACE1AFC35AF000C32FF /* TNDViewController.m */,
+				BC8AC1F01AFE554D00087AF6 /* TNDDetailViewController.h */,
+				BC8AC1F11AFE554D00087AF6 /* TNDDetailViewController.m */,
+				BC8AC2091AFEC78B00087AF6 /* TNDWebViewController.h */,
+				BC8AC20A1AFEC78B00087AF6 /* TNDWebViewController.m */,
+				BC8AC20C1AFECC0A00087AF6 /* TNDMapViewController.h */,
+				BC8AC20D1AFECC0A00087AF6 /* TNDMapViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		BC8AC2251AFEE8D200087AF6 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				BC838AD81AFCD775000C32FF /* TNDAddressHelper.h */,
+				BC838AD91AFCD775000C32FF /* TNDAddressHelper.m */,
+				BC8AC2221AFEE75D00087AF6 /* TNDDateHelper.h */,
+				BC8AC2231AFEE75D00087AF6 /* TNDDateHelper.m */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		BC8AC2261AFEE8DA00087AF6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BC838AA81AFC29BA000C32FF /* AppDelegate.h */,
+				BC838AA91AFC29BA000C32FF /* AppDelegate.m */,
+				BC838AD51AFC461C000C32FF /* TNDMeetup.h */,
+				BC838AD61AFC461C000C32FF /* TNDMeetup.m */,
+				BC838ACA1AFC2BCF000C32FF /* TNDMeetupAPIClient.h */,
+				BC838ACB1AFC2BCF000C32FF /* TNDMeetupAPIClient.m */,
+				BC838ADB1AFCE322000C32FF /* TNDDataStore.h */,
+				BC838ADC1AFCE322000C32FF /* TNDDataStore.m */,
+				BC8AC2251AFEE8D200087AF6 /* Helpers */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,9 +322,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC8AC21E1AFEE0AE00087AF6 /* redDetailBackground.png in Resources */,
+				BC8AC2041AFEBBC800087AF6 /* meetupLogo.png in Resources */,
+				BC8AC2081AFEC1BC00087AF6 /* Launchscreen.storyboard in Resources */,
+				BC8AC2281AFEE98900087AF6 /* Images.xcassets in Resources */,
+				BC8AC21A1AFEDD0700087AF6 /* redBackground.png in Resources */,
 				BC838AB01AFC29BA000C32FF /* Main.storyboard in Resources */,
-				BC838AB51AFC29BA000C32FF /* LaunchScreen.xib in Resources */,
-				BC838AB21AFC29BA000C32FF /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,6 +382,10 @@
 				BC838AAA1AFC29BA000C32FF /* AppDelegate.m in Sources */,
 				BC838ACC1AFC2BCF000C32FF /* TNDMeetupAPIClient.m in Sources */,
 				BC838AA71AFC29BA000C32FF /* main.m in Sources */,
+				BC8AC20E1AFECC0A00087AF6 /* TNDMapViewController.m in Sources */,
+				BC8AC20B1AFEC78B00087AF6 /* TNDWebViewController.m in Sources */,
+				BC8AC2241AFEE75D00087AF6 /* TNDDateHelper.m in Sources */,
+				BC8AC1F21AFE554D00087AF6 /* TNDDetailViewController.m in Sources */,
 				BC838ADA1AFCD775000C32FF /* TNDAddressHelper.m in Sources */,
 				BC838ADD1AFCE322000C32FF /* TNDDataStore.m in Sources */,
 				BC838ACF1AFC35AF000C32FF /* TNDViewController.m in Sources */,
@@ -337,14 +417,6 @@
 				BC838AAF1AFC29BA000C32FF /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		BC838AB31AFC29BA000C32FF /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BC838AB41AFC29BA000C32FF /* Base */,
-			);
-			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

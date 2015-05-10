@@ -9,6 +9,7 @@
 #import "TNDMeetupAPIClient.h"
 #import "TNDMeetup.h"
 #import "TNDAddressHelper.h"
+#import "TNDDateHelper.h"
 #import <AFNetworking/AFNetworking.h>
 
 
@@ -35,8 +36,8 @@
     
     NSDictionary *urlParams = @{@"key":MEETUP_API_KEY,
                                 @"topic":topic,
-                                @"lat":@"40.7127",
-                                @"lon":@"-74.0059"};
+                                @"lat":lat,
+                                @"lon":lon};
     
     [manager GET:MEETUP_BASE_URL parameters:urlParams success:^(NSURLSessionDataTask *task, id responseObject) {
         
@@ -51,7 +52,7 @@
 
         for (NSDictionary *meetUpCollection in meetUpCollections) {
             
-            if (meetUpCollection[@"venue"] && [meetUpEvents count] < 5) {
+            if (meetUpCollection[@"venue"] && [meetUpEvents count] <= 40) {
                 
                 TNDMeetup *meetUp = [[TNDMeetup alloc] init];
                 
@@ -59,16 +60,17 @@
                 meetUp.meetupName = meetUpCollection[@"group"][@"name"];
                 meetUp.attendeeLimit = meetUpCollection[@"rsvp_limit"];
                 meetUp.typeOfAttendee = meetUpCollection[@"group"][@"who"];
-                meetUp.abilityToJoin = meetUpCollection[@"group"][@"join_mode"];
                 meetUp.url = meetUpCollection[@"event_url"];
                 meetUp.rsvpCount = meetUpCollection[@"yes_rsvp_count"];
-                meetUp.duration = meetUpCollection[@"duration"];
-                meetUp.time = meetUpCollection[@"time"];
-                meetUp.address = [TNDAddressHelper convertAddressFromDictionary:meetUpCollection];
                 meetUp.lat = meetUpCollection[@"venue"][@"lat"];
                 meetUp.lon = meetUpCollection[@"venue"][@"lon"];
+                meetUp.address = [TNDAddressHelper convertAddressFromDictionary:meetUpCollection];
                 
-                NSString *eventDescriptionAsString = meetUpCollection[@"description"];
+                meetUp.time = [TNDDateHelper configureDateFromEpochTime:meetUpCollection[@"time"]];
+               
+                NSString *eventDescription = [NSString stringWithFormat:@"\n\n%@", meetUpCollection[@"description"]];
+                
+                NSString *eventDescriptionAsString = eventDescription;
                 meetUp.eventDescription = [[NSAttributedString alloc] initWithData:[eventDescriptionAsString dataUsingEncoding:NSUTF8StringEncoding] options:options documentAttributes:nil error:&error];
                 
                 [meetUpEvents addObject:meetUp];
@@ -76,6 +78,8 @@
         }
         
         completionBlock(meetUpEvents);
+        
+        NSLog(@"LAT IS %@, LON IS %@", lat, lon);
         
     } failure:^(NSURLSessionDataTask *task, NSError *error) {
         

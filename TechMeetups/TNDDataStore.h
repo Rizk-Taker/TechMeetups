@@ -15,7 +15,9 @@
 
 + (instancetype)sharedDataStore;
 
-- (void) getMeetUpsAroundUserLocationWithLatitude: (NSString *)lat andLongitude: (NSString *)lon
-                                         ForTopic: (NSString *)topic;
+- (void) getMeetUpsAroundUserLocationWithLatitude: (NSString *)lat
+                                     andLongitude: (NSString *)lon
+                                         ForTopic: (NSString *)topic
+                                  CompletionBlock:(void (^)())completionBlock;
 
 @end
