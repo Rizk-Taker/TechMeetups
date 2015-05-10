@@ -30,7 +30,7 @@
   
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
-    self.tableView.contentInset = UIEdgeInsetsMake(0, 0, 107, 0);
+    self.tableView.contentInset = UIEdgeInsetsMake(0, 0, 40, 0);
 
     self.searchBar.delegate = self;
     self.searchBar.text = @"Technology";
@@ -160,7 +160,7 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 130;
+    return 140;
 }
 
 - (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar {
